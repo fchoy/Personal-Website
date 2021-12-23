@@ -1,3 +1,3 @@
 # Personal-Website
 
-These are the HTML, and CSS files for my personal website.
+These are the HTML, CSS, and Image files for my personal website.
