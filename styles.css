@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Asar&family=Metal+Mania&family=Nosifer&display=swap");
+
+.html {
+  /*background-color: rgb(174, 201, 132);*/
+  background-color: rgb(196, 127, 0);
+  background-image: url(images/night-sky-city-buildings-digital-art-uhdpaper.com-hd-4.1990.jpg);
+  background-blend-mode: multiply;
+  height: 99%;
+}
+
+.header-items:last-child {
+  text-align: center;
+}
+
+.header-text {
+  color: rgb(238, 130, 41);
+  font-family: Nosifer;
+  text-align: center;
+}
+
+.header-img {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.section-container {
+  text-align: center;
+}
+
+.nav-header {
+  padding-top: 1.5em;
+  text-decoration: underline;
+  font-family: Nosifer;
+  color: rgb(255, 127, 22);
+}
+
+.nav-list {
+  list-style-type: none;
+  align-items: center;
+  padding-right: 1.5em;
+  margin: auto;
+  width: 50%;
+}
+
+.nav-list-element {
+  text-decoration: none;
+  padding-right: 1.2em;
+}
+
+.nav-list-link-element {
+  text-decoration: underline;
+  font-family: Asar;
+  color: white;
+  font-size: 1.1em;
+}
+
+.nav-list-link-element:hover {
+  cursor: pointer;
+}
+
+.footer-container {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.footer-text {
+  font-family: Asar;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 10em;
+  padding-left: 16em;
+  padding-top: 1em;
+  font-size: 1.2em;
+}
+
+.footer-ul {
+  width: 20em;
+  padding: 0px;
+  list-style-type: none;
+}
+
+
+.ul-list-element-footer {
+  float: left;
+}
+
+.ul-list-element-footer:last-child{
+  position: relative; /*Edit position relative to its original position.*/
+  bottom: 25px; /*From bottom, 25px*/
+  left: 5px;
+}
+
+
+.linkedin-icon {
+  width: 45px;
+  padding-top: 13px;
+  padding-left: 10px;
+}
+
+.email-icon {
+  width: 50px;
+  padding-left: 20px;
+}
+
+.github-icon{
+  width: 50px;
+  padding-left: 10px;
+}
+
+/**About Me**/
+.about-me-header-items, .random-header-items{
+    text-align: center;
+}
+
+.about-me-header-text, .random-header-text{
+    font-family: Nosifer;
+    color:rgb(255, 127, 22);
+}
+
+.aboutme-header-ul, .random-header-ul{
+    padding-right: 20px;
+}
+
+.aboutme-list-item, .random-list-item{
+    text-align: center;
+    display: inline;
+    padding: 5px;
+    padding-right: 20px;
+}
+
+.aboutme-list-link, .random-list-link{
+    font-family: Asar;
+    text-decoration: underline;
+    color: white;  
+    font-size: 1.2em;
+}
+
+.aboutme-section-container{
+  text-align: center;
+}
+
+.aboutme-intro-text{
+  font-family: Asar;
+  color: rgb(209, 209, 209);
+}
+
+.education-section-text{
+  font-family: Asar;
+  color: rgb(209, 209, 209);
+  position: relative;
+  top:-10px;
+}
+
+.aboutme-section-header{
+  font-family: Nosifer;
+  /*color:rgb(238, 130, 41);*/
+  color: rgb(206, 206, 206);
+  text-decoration: underline;
+  text-decoration-color: rgba(238, 130, 41, 0.2);
+}
+
+.aboutme-section-text{
+  font-family: Asar;
+  color: rgb(212, 212, 212);
+  text-decoration: underline;
+}
+
+.aboutme-technicalskills-container{
+  display: list-item;
+  position: relative;
+  top: -10px;
+}
+
+.aboutme-technicalskills-body-container{
+  position: relative;
+  top: 5px;
+}
+
+.programming-languages-ul, .web-development-ul, .tools-ul{
+  display: list-item;
+}
+
+.programming-languages-list-item, .web-development-list-item, .tools-list-item{
+  padding-right: 3.5em; 
+  position: relative;
+  top: -10px;
+  color: white;
+  list-style-position: inside;
+}
+
+.programming-languages-section{
+  position: relative;
+  top: -20px;
+}
+
+.web-development-section{
+  position: relative;
+  top: -40px;
+}
+.tools-section{
+  position: relative;
+  top: -60px;
+}
+.personal-projects-container{
+  position: relative;
+  bottom: 70px;
+}
+
+.personal-projects-ul{
+  position: relative;
+  top: -10px;
+}
+
+.personal-projects-list-element{
+  padding-bottom: 10px;
+  padding-right: 25px;
+  color: rgb(255, 255, 255);
+  list-style-position: inside;
+}
+
+.personal-projects-link{
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+}
+
+.personal-projects-link:visited{
+  text-decoration: none;
+}
+
+.about-me-footer-container{
+  position: relative;
+  bottom: 110px;
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  padding-right: 40px;
+}
+
+/**Random Page**/
+
+.random-section-container{
+  text-align: center;
+  width: 100%;
+}
+
+.random-section-text{
+  color: rgb(206, 206, 206);
+  font-size: 1.1em;
+}
+
+.random-section-kronii-image{
+  border-radius: 50px;
+  padding-bottom: 1.1em;
+}
