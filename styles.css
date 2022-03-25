@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Asar&family=Metal+Mania&family=Nosifer&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Asar&family=Lato&family=Metal+Mania&family=Nosifer&display=swap');
 .html {
   /*background-color: rgb(174, 201, 132);*/
   background-color: rgb(196, 127, 0);
-  background-image: url(images/night-sky-city-buildings-digital-art-uhdpaper.com-hd-4.1990.jpg);
+  background-image: url(images/photo-1623150502742-6a849aa94be4.avif);
   background-blend-mode: multiply;
   height: 99%;
 }
@@ -14,13 +13,14 @@
 
 .header-text {
   color: rgb(238, 130, 41);
-  font-family: Nosifer;
+  font-family: Lato;
   text-align: center;
+  font-size: 40px;
 }
 
 .header-img {
-  width: 300px;
-  height: 200px;
+  width: 300px; /*Was 300 for old image*/
+  height: 375px; /*Was 200 for old image*/
   border-radius: 8px;
 }
 
@@ -29,10 +29,13 @@
 }
 
 .nav-header {
-  padding-top: 1.5em;
+  padding-top: 1.0em; /*Was 1.5 for old image*/
+  font-family: Lato;
+  color: rgb(211, 204, 204);
   text-decoration: underline;
-  font-family: Nosifer;
-  color: rgb(255, 127, 22);
+  text-decoration-color: rgba(238, 130, 41, 0.2);
+  font-size: 27px;
+  /*color: rgb(255, 127, 22);*/
 }
 
 .nav-list {
@@ -115,8 +118,9 @@
 }
 
 .about-me-header-text, .random-header-text{
-    font-family: Nosifer;
+    font-family: Lato;
     color:rgb(255, 127, 22);
+    font-size: 40px;
 }
 
 .aboutme-header-ul, .random-header-ul{
@@ -154,11 +158,12 @@
 }
 
 .aboutme-section-header{
-  font-family: Nosifer;
+  font-family: Lato;
   /*color:rgb(238, 130, 41);*/
   color: rgb(206, 206, 206);
   text-decoration: underline;
   text-decoration-color: rgba(238, 130, 41, 0.2);
+  font-size: 32px;
 }
 
 .aboutme-section-text{

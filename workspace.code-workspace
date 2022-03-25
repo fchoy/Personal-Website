@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\HTML Musician Website"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML My Personal Website"
+	}
+}
