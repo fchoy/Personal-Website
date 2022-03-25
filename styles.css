@@ -216,6 +216,7 @@
 .personal-projects-ul{
   position: relative;
   top: -10px;
+  right: 15px;
 }
 
 .personal-projects-list-element{
