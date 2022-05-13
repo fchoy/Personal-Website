@@ -7,8 +7,12 @@
   height: 99%;
 }
 
-.header-items:last-child {
+/*.header-items:last-child {
   text-align: center;
+}*/
+
+.img-div{
+  text-align : center;
 }
 
 .header-text {
@@ -24,9 +28,9 @@
   border-radius: 8px;
 }
 
-.section-container {
+/*.section-container {
   text-align: center;
-}
+}*/
 
 .nav-header {
   padding-top: 1.0em; /*Was 1.5 for old image*/
@@ -44,11 +48,14 @@
   padding-right: 1.5em;
   margin: auto;
   width: 50%;
+  border: red 2px solid;
 }
 
 .nav-list-element {
   text-decoration: none;
   padding-right: 1.2em;
+  border : red 2px solid;
+  width : 20%;
 }
 
 .nav-list-link-element {
@@ -113,7 +120,7 @@
 }
 
 /**About Me**/
-.about-me-header-items, .random-header-items{
+.home-header-items, .about-me-header-items, .random-header-items{
     text-align: center;
 }
 
@@ -123,18 +130,22 @@
     font-size: 40px;
 }
 
-.aboutme-header-ul, .random-header-ul{
+.home-header-ul, .aboutme-header-ul, .random-header-ul{
     padding-right: 20px;
 }
 
-.aboutme-list-item, .random-list-item{
+.home-header-ul{
+  padding-bottom: 1.2em;
+}
+
+.home-list-item, .aboutme-list-item, .random-list-item{
     text-align: center;
     display: inline;
     padding: 5px;
     padding-right: 20px;
 }
 
-.aboutme-list-link, .random-list-link{
+.home-list-link, .aboutme-list-link, .random-list-link{
     font-family: Asar;
     text-decoration: underline;
     color: white;  
@@ -259,4 +270,9 @@
 .random-section-kronii-image{
   border-radius: 50px;
   padding-bottom: 1.1em;
+}
+
+#random-button{
+  height : 30px;
+  width : 50%
 }
