@@ -163,6 +163,7 @@
 
 .aboutme-section-container{
   text-align: center;
+  height : 440px;
 }
 
 .aboutme-intro-text{
@@ -227,32 +228,6 @@
 .tools-section{
   position: relative;
   top: -60px;
-}
-.personal-projects-container{
-  position: relative;
-  bottom: 70px;
-}
-
-.personal-projects-ul{
-  position: relative;
-  top: -10px;
-  right: 15px;
-}
-
-.personal-projects-list-element{
-  padding-bottom: 10px;
-  padding-right: 25px;
-  color: rgb(255, 255, 255);
-  list-style-position: inside;
-}
-
-.personal-projects-link{
-  color: rgb(226, 226, 226);
-  text-decoration: none;
-}
-
-.personal-projects-link:visited{
-  text-decoration: none;
 }
 
 .about-me-footer-container{
