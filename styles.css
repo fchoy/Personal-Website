@@ -83,12 +83,17 @@
   padding-left: 16em;
   padding-top: 1em;
   font-size: 1.2em;
+  position : relative;
+  right : 10px;
+
 }
 
 .footer-ul {
   width: 20em;
   padding: 0px;
   list-style-type: none;
+  position : relative;
+  right : 10px;
 }
 
 
@@ -120,17 +125,21 @@
 }
 
 /**About Me**/
-.home-header-items, .about-me-header-items, .random-header-items{
+.about-me-body, .random-body{
+  overflow-y: hidden; /*Prevents horizontal scroll bar due to overflow*/
+}
+
+.home-header-items, .about-me-header-items, .random-header-items, .portfolio-header-items{
     text-align: center;
 }
 
-.about-me-header-text, .random-header-text{
+.about-me-header-text, .random-header-text, .portfolio-header-text{
     font-family: Lato;
     color:rgb(255, 127, 22);
     font-size: 40px;
 }
 
-.home-header-ul, .aboutme-header-ul, .random-header-ul{
+.home-header-ul, .aboutme-header-ul, .random-header-ul, .portfolio-header-ul{
     padding-right: 20px;
 }
 
@@ -138,14 +147,14 @@
   padding-bottom: 1.2em;
 }
 
-.home-list-item, .aboutme-list-item, .random-list-item{
+.home-list-item, .aboutme-list-item, .random-list-item, .portfolio-list-item{
     text-align: center;
     display: inline;
     padding: 5px;
     padding-right: 20px;
 }
 
-.home-list-link, .aboutme-list-link, .random-list-link{
+.home-list-link, .aboutme-list-link, .random-list-link, .portfolio-list-link{
     font-family: Asar;
     text-decoration: underline;
     color: white;  
@@ -270,9 +279,12 @@
 .random-section-kronii-image{
   border-radius: 50px;
   padding-bottom: 1.1em;
+  animation-delay : 500ms;
 }
 
 #random-button{
   height : 30px;
   width : 50%
 }
+
+/*Portfolio Page*/
