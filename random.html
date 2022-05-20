@@ -8,17 +8,20 @@
   </head>
 
   <body class="random-body">
-    <div class="random-header-items">
-      <h1 class="random-header-text">Random</h1>
-      <nav>
-          <ul class="random-header-ul">
-            <li class="random-list-item"><a class="random-list-link" href="index.html">Home</a></li>
-            <li class="random-list-item"><a class="random-list-link" href="aboutme.html">About Me</a></li>
-            <li class="random-list-item"><a class="random-list-link" href="Portfolio.html">Portfolio</a></li>
-            <li class="random-list-item"><a class="random-list-link" href="random.html">Random</a></li>
-          </ul>
-      </nav>
-    </div>
+    <div class="headerBar">
+      <header>
+          <h1 class="header-text">Random</h1>
+              <nav class="header-nav">
+                  <ul class="home-header-ul">
+                      <li class="header-list-item"><a class="header-list-link" href="index.html">Home</a></li>
+                      <li class="header-list-item"><a class="header-list-link" href="aboutme.html">About Me</a></li>
+                      <li class="header-list-item"><a class="header-list-link" href="Portfolio.html">Portfolio</a></li>
+                      <li class="header-list-item"><a class="header-list-link" href="random.html">Random</a></li>
+                      <li class="header-list-item"><a class="header-list-link" href="contact.html">Contact</a></li>
+                  </ul>
+              </nav>
+      </header>
+  </div>
 
     <section class="random-section-container">
       <div>
@@ -27,12 +30,19 @@
           EN.
         </p>
       </div>
-      <img class="random-section-kronii-image" src="Images/kronii.PNG" id="kronii-image" alt="can't find image">
-      <br/>
-      <button id="random-button" onclick="smackSound();">Press this to smack her in the face</button>
-    </section>
 
-    <footer class="page-footer">
+      <div class="kronii-img-smack-counter">
+        <h3 class="smack-counter-text" id="smack-counter-text"> Smack Counter : 0 </h3>
+        <h3 class="smack-counter-extra-text" id="smack-counter-extra-text"></h3>
+        <img class="random-section-kronii-image" src="Images/kronii.PNG" id="kronii-image" alt="can't find image">
+        <br/>
+      </div>
+      <div class="smack-button-div">
+        <button class="random-button" id="random-button" onclick="smackSound();">Press this to smack her in the face</button>
+      </div>
+      </section>
+
+    <!--<footer class="page-footer">
       <div class="footer-container">
           <p class="footer-text">Created by Felix Choy</p>
           <ul class="footer-ul">
@@ -43,6 +53,6 @@
               <li class="ul-list-element-footer"><a href="https://github.com/fchoy" target="_blank"><img class="github-icon" src="Images/github icon.png"></a></li>
           </ul>
       </div>
-  </footer>
+  </footer>-->
   </body>
 </html>

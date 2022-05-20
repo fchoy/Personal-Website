@@ -1,36 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Asar&family=Lato&family=Metal+Mania&family=Nosifer&display=swap');
+*{ /*Reset all padding and margin setting so that divs expand all the way to edge of screen. */
+  padding : 0;
+  margin : 0;
+}
+
 .html {
-  /*background-color: rgb(174, 201, 132);*/
   background-color: rgb(196, 127, 0);
   background-image: url(images/photo-1623150502742-6a849aa94be4.avif);
   background-blend-mode: multiply;
-  height: 99%;
+  height: 100%;
 }
 
-/*.header-items:last-child {
-  text-align: center;
-}*/
+/*Header Section for all pages*/
+.headerBar{
+  background-image: url(images/photo-1623150502742-6a849aa94be4.avif);
+  background-color: rgb(184, 120, 3);
+  background-blend-mode: multiply;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom : 20px;
+  height : 150px;
+  width: 100%;
+}
 
 .img-div{
   text-align : center;
 }
 
 .header-text {
-  color: rgb(238, 130, 41);
+  color : white;
   font-family: Lato;
   text-align: center;
   font-size: 40px;
+  margin-top : 30px;
 }
-
-.header-img {
-  width: 300px; /*Was 300 for old image*/
-  height: 375px; /*Was 200 for old image*/
-  border-radius: 8px;
-}
-
-/*.section-container {
-  text-align: center;
-}*/
 
 .nav-header {
   padding-top: 1.0em; /*Was 1.5 for old image*/
@@ -39,34 +43,49 @@
   text-decoration: underline;
   text-decoration-color: rgba(238, 130, 41, 0.2);
   font-size: 27px;
-  /*color: rgb(255, 127, 22);*/
 }
 
-.nav-list {
-  list-style-type: none;
-  align-items: center;
-  padding-right: 1.5em;
-  margin: auto;
-  width: 50%;
-  border: red 2px solid;
+.header-nav{
+  display : flex;
+  justify-content: center;
 }
 
-.nav-list-element {
-  text-decoration: none;
-  padding-right: 1.2em;
-  border : red 2px solid;
-  width : 20%;
+.home-header-ul{
+  padding-bottom: 1.2em;
+  padding-top : 20px;
 }
 
-.nav-list-link-element {
-  text-decoration: underline;
+.header-list-item{
+  text-align: center;
+  display: inline;
+  padding: 5px;
+  padding-right: 20px;
+}
+
+.header-list-link{
   font-family: Asar;
-  color: white;
-  font-size: 1.1em;
+  text-decoration: underline;
+  color: rgb(235, 235, 235);  
+  font-size: 1.2em;
+}
+/*--------------------------*/
+
+.home-img {
+  width: 300px; /*Was 300 for old image*/
+  height: 375px; /*Was 200 for old image*/
+  border-radius: 8px;
+  border-radius : 20%;
+  padding-top: 10px;
 }
 
-.nav-list-link-element:hover {
-  cursor: pointer;
+.home-intro-text-div{
+  padding-top: 40px;
+  text-align: center;
+}
+
+.home-intro-text{
+  color : white;
+  font-weight: lighter;
 }
 
 .footer-container {
@@ -107,58 +126,9 @@
   left: 5px;
 }
 
-
-.linkedin-icon {
-  width: 45px;
-  padding-top: 13px;
-  padding-left: 10px;
-}
-
-.email-icon {
-  width: 50px;
-  padding-left: 20px;
-}
-
-.github-icon{
-  width: 50px;
-  padding-left: 10px;
-}
-
-/**About Me**/
+/**------------------------------About Me------------------------------**/
 .about-me-body, .random-body{
-  overflow-y: hidden; /*Prevents horizontal scroll bar due to overflow*/
-}
-
-.home-header-items, .about-me-header-items, .random-header-items, .portfolio-header-items{
-    text-align: center;
-}
-
-.about-me-header-text, .random-header-text, .portfolio-header-text{
-    font-family: Lato;
-    color:rgb(255, 127, 22);
-    font-size: 40px;
-}
-
-.home-header-ul, .aboutme-header-ul, .random-header-ul, .portfolio-header-ul{
-    padding-right: 20px;
-}
-
-.home-header-ul{
-  padding-bottom: 1.2em;
-}
-
-.home-list-item, .aboutme-list-item, .random-list-item, .portfolio-list-item{
-    text-align: center;
-    display: inline;
-    padding: 5px;
-    padding-right: 20px;
-}
-
-.home-list-link, .aboutme-list-link, .random-list-link, .portfolio-list-link{
-    font-family: Asar;
-    text-decoration: underline;
-    color: white;  
-    font-size: 1.2em;
+  overflow: hidden;
 }
 
 .aboutme-section-container{
@@ -169,6 +139,16 @@
 .aboutme-intro-text{
   font-family: Asar;
   color: rgb(209, 209, 209);
+  padding-bottom : 20px;
+}
+
+.about-me-skills-div{
+  display : flex;
+  flex-direction : column;
+  justify-content: center;
+  width : 100%;
+  list-style-type: none;
+  position : relative;
 }
 
 .education-section-text{
@@ -176,58 +156,44 @@
   color: rgb(209, 209, 209);
   position: relative;
   top:-10px;
+  padding-bottom : 15px;
 }
 
 .aboutme-section-header{
   font-family: Lato;
-  /*color:rgb(238, 130, 41);*/
   color: rgb(206, 206, 206);
   text-decoration: underline;
   text-decoration-color: rgba(238, 130, 41, 0.2);
   font-size: 32px;
+  padding-bottom : 20px;
+  
+}
+
+.aboutme-section-header-technical-skills{
+  font-family: Lato;
+  color: rgb(206, 206, 206);
+  text-decoration: underline;
+  text-decoration-color: rgba(238, 130, 41, 0.2);
+  font-size: 32px;
+  
 }
 
 .aboutme-section-text{
   font-family: Asar;
   color: rgb(212, 212, 212);
   text-decoration: underline;
-}
-
-.aboutme-technicalskills-container{
-  display: list-item;
-  position: relative;
-  top: -10px;
-}
-
-.aboutme-technicalskills-body-container{
-  position: relative;
-  top: 5px;
+  padding-top : 5px;
 }
 
 .programming-languages-ul, .web-development-ul, .tools-ul{
-  display: list-item;
+  padding-left : 35px;
 }
 
 .programming-languages-list-item, .web-development-list-item, .tools-list-item{
   padding-right: 3.5em; 
-  position: relative;
-  top: -10px;
   color: white;
   list-style-position: inside;
-}
-
-.programming-languages-section{
-  position: relative;
-  top: -20px;
-}
-
-.web-development-section{
-  position: relative;
-  top: -40px;
-}
-.tools-section{
-  position: relative;
-  top: -60px;
+  padding-bottom : 5px;
 }
 
 .about-me-footer-container{
@@ -239,7 +205,7 @@
   padding-right: 40px;
 }
 
-/**Random Page**/
+/**------------------------------Random Page------------------------------**/
 
 .random-section-container{
   text-align: center;
@@ -249,6 +215,21 @@
 .random-section-text{
   color: rgb(206, 206, 206);
   font-size: 1.1em;
+  padding-bottom : 30px;
+}
+
+.kronii-img-smack-counter{
+  display : flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.smack-counter-text{
+  align-items: center;
+  width : 200px;
+  height : 50px;
+  color : rgb(7, 7, 7);
 }
 
 .random-section-kronii-image{
@@ -257,9 +238,117 @@
   animation-delay : 500ms;
 }
 
-#random-button{
-  height : 30px;
-  width : 50%
+.smack-button-div{
+  padding-top : 15px;
+  padding-left : 200px;
 }
 
-/*Portfolio Page*/
+#random-button{
+  height : 30px;
+  width : 50%;
+}
+
+/**------------------------------Portfolio------------------------------**/
+.personal-projects-container{
+  text-align: center;
+}
+
+.personal-projects-ul{ 
+    /*Display all content inside of the ul vertically.*/
+  display : flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.personal-projects-ul:first-child{  /*For first child of project ul*/
+display : flex;
+flex-direction: column;
+justify-content: space-evenly;
+padding-top: 20px; 
+}
+
+.personal-projects-list-element{
+  display : flex; /*For each project in a row, flex it vertically so that the picture is on top and the link is on the bottom.*/
+  flex-direction : row;
+  list-style-type: none;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  color: rgb(255, 255, 255);
+  list-style-position: inside;
+  align-items: center;
+  padding-bottom : 40px;
+}
+.personal-projects-list-element:first-child{ /*First child of ul*/
+  display : flex; 
+  flex-direction : row;
+  justify-content: center;
+  align-items: center;
+  list-style-position: inside;
+  list-style-type: none;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  padding-bottom : 40px;
+  color: rgb(255, 255, 255);
+  position : relative;
+  left : -70px;
+}
+
+.personal-projects-link{
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  padding-right : 30px;
+}
+
+.personal-projects-demo-img{
+      max-width: 100%; /*Keep max width at 100%, we will use this to be able to scale our image down while keeping the aspect ratio the same.*/
+      width : 600px;
+      object-fit: contain;
+      padding-bottom : 20px;
+}
+
+.personal-projects-link:visited{
+  text-decoration: none;
+}
+
+/**------------------------------Contact------------------------------**/
+.contact-ul-div{
+  width : 100%;
+  padding-top : 100px;
+}
+
+.contact-items-ul{
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  position : relative;
+  bottom : 120px;
+}
+
+.contact-list-item{
+  display : flex;
+  align-items: center;
+  padding-top : 45px;
+  font-size : 20px;
+  font-weight : 500;
+}
+
+.linkedin-icon {
+  width: 50px;
+  padding-left: 10px;
+}
+
+.email-icon {
+  width: 50px;
+}
+
+.github-icon{
+  width: 50px;
+  padding-left: 10px;
+}
+
+.contact-text-link{
+  padding-left : 20px;
+  text-decoration: none;
+  color : white;
+}
